@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appleviewoldmanali.com/sitemap.xml
