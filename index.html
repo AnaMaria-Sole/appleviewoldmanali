@@ -30,63 +30,162 @@
 <body class="antialiased text-gray-900">
 
     <!-- NAVBAR -->
-    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="animated-apple text-4xl">🍎</div>
-                <div>
-                    <span class="heading-font text-3xl font-bold">Apple View</span>
-                    <p class="text-xs text-red-600 -mt-1">Old Manali • Peaceful Homestay</p>
-                </div>
-            </div>
-
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#about" class="hover:text-red-600">About Us</a>
-                <a href="#rooms" class="hover:text-red-600">Rooms</a>
-                <a href="#adventure" class="hover:text-red-600">Trekking & Adventure</a>
-                <a href="#reviews" class="hover:text-red-600">Reviews</a>
-                <a href="#contact" class="hover:text-red-600 font-semibold">Book Now</a>
-            </div>
-
-            <div class="flex items-center gap-5">
-                <a href="https://www.instagram.com/apple_view_old_manali/" target="_blank" class="text-3xl hover:scale-110">📸</a>
-                <a href="https://www.facebook.com/appleviewoldmanali" target="_blank" class="text-3xl hover:scale-110">📘</a>
-                <a href="https://x.com/appleviewoldmanali" target="_blank" class="text-3xl hover:scale-110">𝕏</a>
-                <a href="https://linkedin.com/company/apple-view-old-manali" target="_blank" class="text-3xl hover:scale-110">💼</a>
-                <button id="mobile-btn" class="md:hidden text-3xl">☰</button>
+    <!-- HEADER / NAVBAR -->
+<nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <div class="text-4xl">🍎</div>
+            <div>
+                <span class="heading-font text-3xl font-bold">Apple View</span>
+                <p class="text-xs text-red-600 -mt-1">Old Manali • Peaceful Homestay</p>
             </div>
         </div>
-    </nav>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+            <a href="#about" class="hover:text-red-600">About Us</a>
+            <a href="#rooms" class="hover:text-red-600">Rooms</a>
+            <a href="#adventure" class="hover:text-red-600">Trekking & Adventure</a>
+            <a href="#reviews" class="hover:text-red-600">Reviews</a>
+            <a href="#contact" class="hover:text-red-600 font-semibold">Book Now</a>
+        </div>
+
+        <!-- Official Social Logos -->
+        <div class="flex items-center gap-6">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/apple_view_old_manali/" target="_blank" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#E4405F">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1.5"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/appleviewoldmanali" target="_blank" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#1877F2">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/appleviewoldmanali" target="_blank" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#000000">
+                    <path d="M18.244 2.25l-7.165 8.159L3.75 2.25H0L9.09 13.5 0 21.75h3.75l7.165-8.159L18.244 21.75H24L13.91 10.5 24 2.25h-5.756z"/>
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/company/apple-view-old-manali" target="_blank" class="hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#0A66C2">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14z"/>
+                    <path d="M8 11v6M8 7v1M12 11v6M16 11v6" stroke="#fff" stroke-width="1.5"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
 
     <!-- HERO VIDEO - 80% WIDTH, FULL FRAME, TEXT BELOW -->
     <section class="relative bg-white py-8">
-        <div class="max-w-[80%] mx-auto">
-            <video 
-                id="hero-video" 
-                autoplay 
-                muted 
-                playsinline 
-                class="w-full h-auto mx-auto block"
+        <!-- HERO VIDEO - Plays Once -->
+<section class="relative bg-white py-8 overflow-hidden">
+    <div class="max-w-[90%] lg:max-w-[80%] mx-auto relative">
+        
+        <!-- Video Container -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+            <video
+                id="hero-video"
+                autoplay
+                muted
+                playsinline
+                class="w-full h-auto mx-auto block aspect-video"
                 poster="./images/apple-view-old-manali-winter-snow.jpg">
                 <source src="./videos/apple-view-old-manali-hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
-        </div>
 
-        <div class="max-w-4xl mx-auto text-center px-6 mt-10">
-            <div class="inline-flex bg-red-100 text-red-700 px-6 py-3 rounded-3xl text-sm font-medium mb-6">🍎 Old Manali • 800m from Manali Bus Station</div>
-            <h1 class="heading-font text-5xl md:text-7xl font-bold text-gray-900">Best Peaceful Quiet Guesthouse in Old Manali</h1>
-            <p class="text-2xl md:text-3xl text-gray-700 mt-6">Romantic Getaways • Serene Retreats • Himalayan Adventure Base</p>
-            <div class="mt-10 flex flex-wrap justify-center gap-6">
-                <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-10 py-6 rounded-3xl text-2xl font-semibold">Book Your Stay</a>
-                <a href="https://wa.me/919816887844" target="_blank" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-10 py-6 rounded-3xl text-2xl flex items-center gap-3">💬 WhatsApp +91 98168 87844</a>
-            </div>
+            <!-- Unmute Button -->
+            <button id="unmute-btn"
+                    class="absolute bottom-6 right-6 bg-black/70 hover:bg-black/90 text-white px-5 py-3 rounded-2xl text-sm font-medium flex items-center gap-2 transition-all duration-300 z-20">
+                <span id="volume-icon">🔇</span>
+                <span id="volume-text">Unmute Sound</span>
+            </button>
         </div>
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-4xl mx-auto text-center px-6 mt-12">
+        <div class="inline-flex bg-red-100 text-red-700 px-6 py-3 rounded-3xl text-sm font-medium mb-6">
+            🍎 Old Manali • 800m from Manali Bus Station
+        </div>
+        
+        <h1 class="heading-font text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+            Best Peaceful Quiet Guesthouse in Old Manali
+        </h1>
+        
+        <p class="text-2xl md:text-3xl text-gray-700 mt-6">
+            Romantic Getaways • Serene Retreats • Himalayan Adventure Base
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-6">
+            <a href="#contact" 
+               class="bg-red-600 hover:bg-red-700 text-white px-10 py-6 rounded-3xl text-2xl font-semibold transition-all">
+                Book Your Stay
+            </a>
+            <a href="https://wa.me/919816887844" target="_blank" 
+               class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-10 py-6 rounded-3xl text-2xl flex items-center gap-3 transition-all">
+                💬 WhatsApp +91 98168 87844
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('hero-video');
+    const unmuteBtn = document.getElementById('unmute-btn');
+    const volumeIcon = document.getElementById('volume-icon');
+    const volumeText = document.getElementById('volume-text');
+
+    let isMuted = true;
+
+    function updateButton() {
+        if (isMuted) {
+            volumeIcon.textContent = '🔇';
+            volumeText.textContent = 'Unmute Sound';
+        } else {
+            volumeIcon.textContent = '🔊';
+            volumeText.textContent = 'Mute';
+        }
+    }
+
+    unmuteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        video.muted = isMuted;
+        updateButton();
+    });
+
+    // Optional: Restart video when clicked (if user wants to replay)
+    video.addEventListener('click', () => {
+        if (video.paused || video.ended) {
+            video.currentTime = 0;
+            video.play();
+        }
+    });
+
+    updateButton();
+});
+</script>
     </section>
 
     <!-- TRUST BAR -->
     <div class="bg-white py-5 border-b flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm font-medium text-gray-600">
         <div>⭐ 4.9 (187+ Google Reviews)</div>
-        <div>🏔️ Best Peaceful Quiet Guesthouse Old Manali</div>
+        <div>🏔️ Best & most peacefully quiet guesthouse in all of Manali</div>
         <div>🚌 <a href="https://www.google.com/maps/place/Manali+Bus+Station" target="_blank" class="text-red-600 hover:underline">800m from Manali Bus Station</a></div>
         <a href="https://www.google.com/maps/place/Apple+View+Old+Manali" target="_blank" class="text-red-600 hover:underline">📍 Google Maps</a>
     </div>
@@ -157,8 +256,8 @@
                     <h3 class="font-semibold text-xl">Hang Gliding</h3>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow">
-                    <img src="./best-masala-omelette-and-chai-in-the-world.jpg" alt="Masala Omelette" loading="lazy" class="w-full h-48 object-cover rounded-2xl mb-4">
-                    <h3 class="font-semibold text-xl">Homemade Masala Omelette</h3>
+                    <img src="./images/best-masala-omelette-and-chai-in-the-world.jpg" alt="Masala Omelette" loading="lazy" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h3 class="font-semibold text-xl">Revaths Worldwide famous masala omelettes</h3>
                 </div>
             </div>
         </div>
