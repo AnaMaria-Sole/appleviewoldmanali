@@ -48,10 +48,10 @@
         
         <!-- Logo -->
         <div class="flex items-center gap-3">
-            <div class="text-4xl">🍎</div>
+            <img src="images/apple-view-logo.svg" alt="Apple icon" class="w-14 h-14" />
             <div>
                 <span class="heading-font text-3xl font-bold">Apple View</span>
-                <p class="text-xs text-red-600 -mt-1">Old Manali • Peaceful Homestay</p>
+                <p class="text-xs text-red-600 -mt-0">Old Manali • Peaceful Homestay</p>
             </div>
         </div>
 
@@ -67,13 +67,17 @@
         <!-- Official Social Logos -->
         <div class="flex items-center gap-6">
             <!-- Instagram -->
-            <a href="https://www.instagram.com/apple_view_guest_house/" target="_blank" class="hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#E4405F">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                    <circle cx="12" cy="12" r="4"/>
-                    <circle cx="17.5" cy="6.5" r="1.5"/>
-                </svg>
-            </a>
+           <a 
+  href="https://www.instagram.com/apple_view_guest_house/" 
+  target="_blank" 
+  class="hover:scale-110 transition-transform"
+>
+  <img 
+    src="images/instagram icon.svg" 
+    alt="Instagram" 
+    class="w-7 h-7 block object-contain"
+  />
+</a>
 
             <!-- Facebook -->
             <a href="https://www.facebook.com/appleviewoldmanali" target="_blank" class="hover:scale-110 transition-transform">
@@ -223,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="heading-font text-5xl text-center font-bold mb-4">Experience Apple View</h2>
         <p class="text-center text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            A peaceful garden homestay with breathtaking mountain views in the heart of Old Manali
+            A peaceful garden guest house with breathtaking mountain views in the heart of Old Manali
         </p>
 
         <div class="grid md:grid-cols-2 gap-10">
@@ -236,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
                 <div class="mt-6 px-2">
-                    <h3 class="text-2xl font-semibold mb-2">Charming Garden Homestay</h3>
+                    <h3 class="text-2xl font-semibold mb-2">Charming Garden Guest House</h3>
                     <p class="text-gray-600 leading-relaxed">
                         Nestled among apple trees and lush greenery, our family-run guesthouse offers a peaceful 
                         and authentic Himalayan experience just 800m from Manali Bus Station.
@@ -267,16 +271,16 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- ROOMS -->
     <section id="rooms" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="heading-font text-5xl text-center font-bold mb-12">Best Rooms for Romantic Breaks & Peaceful Stays</h2>
-            <p class="text-gray-600 leading-relaxed">
-                       We have 12 bedrooms in total - 8 bedrooms with onsuite bathroom &amp; 4 bedrooms with shared bathroom. All bathrooms have piping hot water.
+            <h2 class="heading-font text-5xl text-center font-bold mb-6">Best Rooms for Romantic Breaks & Peaceful Stays</h2>
+            <p class="text-center text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                       We have 12 bedrooms in total - 8 bedrooms with onsuite bathroom &amp; 4 bedrooms with shared bathroom. All bathrooms have piping hot water. One bedroom for long stays with kitchen and en suite bathroom.
                     </p>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group bg-white border rounded-3xl overflow-hidden hover:shadow-2xl transition-all">
                     <img src="./images/apple-view-old-manali-orchard-room.jpg" alt="Cedar Cottage" loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold">Cedar Cottage</h3>
-                        <p class="text-red-600">₹3,200 / night</p>
+                        <!-- <p class="text-red-600">₹3,200 / night</p> -->
                         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-8 w-full py-4 bg-red-600 text-white rounded-2xl">Book Now</button>
                     </div>
                 </div>
@@ -284,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="./images/apple-view-old-manali-mountain-nest-suite.jpg" alt="Orchard Family Suite" loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold">Orchard Family Suite</h3>
-                        <p class="text-red-600">₹4,800 / night</p>
+                        <!--<p class="text-red-600">₹4,800 / night</p> -->
                         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-8 w-full py-4 bg-red-600 text-white rounded-2xl">Book Now</button>
                     </div>
                 </div>
@@ -292,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="./images/apple-view-old-manali-attic-hideaway.jpg" alt="Mountain View Room" loading="lazy" class="w-full h-64 object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold">Mountain View Room</h3>
-                        <p class="text-red-600">₹1,800 / night</p>
+                        <!-- <p class="text-red-600">₹1,800 / night</p> -->
                         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-8 w-full py-4 bg-red-600 text-white rounded-2xl">Book Now</button>
                     </div>
                 </div>
@@ -382,13 +386,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-white py-16 text-center">
-        <div class="animated-apple text-6xl mb-6">🍎</div>
+        <div class="flex justify-center mb-6">
+            <img src="images/apple-view-white-logo.svg" alt="Apple icon" class="animated-apple w-14 h-14" />
+        </div>
         <p class="heading-font text-4xl">Apple View, Old Manali, H.P. India</p>
         <p class="text-gray-400">Your peaceful Himalayan sanctuary</p>
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/919816887844" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-3xl shadow-2xl flex items-center justify-center text-5xl floating-whatsapp z-50">💬</a>
+    <a 
+  href="https://wa.me/919816887844" 
+  target="_blank" 
+  class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-3xl shadow-2xl flex items-center justify-center floating-whatsapp z-50"
+>
+  <img 
+    src="./images/whatsapp-white.svg" 
+    alt="WhatsApp" 
+    class="w-12 h-12"
+  />
+</a>
 
     <script>
         document.getElementById('mobile-btn').addEventListener('click', () => {
