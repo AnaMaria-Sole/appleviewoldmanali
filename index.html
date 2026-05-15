@@ -123,9 +123,9 @@
 
             <!-- Unmute Button -->
             <button id="unmute-btn"
-                    class="absolute bottom-6 right-6 bg-black/70 hover:bg-black/90 text-white px-5 py-3 rounded-2xl text-sm font-medium flex items-center gap-2 transition-all z-30">
-                <span id="volume-icon">🔇</span>
-                <span id="volume-text">Unmute Sound</span>
+                    class="absolute top-6 left-6 bg-black/70 hover:bg-black/90 text-white px-5 py-3 rounded-2xl text-sm font-medium flex items-center gap-2 transition-all z-30">
+                <span id="volume-icon"><img src="images/volumn-icon-white.svg" alt="Volume" class="w-5 h-5"></span>
+                <span id="volume-text">Sound On</span>
             </button>
         </div>
     </div>
@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isMuted = true;
 
     function updateButton() {
-        volumeIcon.textContent = isMuted ? '🔇' : '🔊';
-        volumeText.textContent = isMuted ? 'Unmute Sound' : 'Mute';
+        volumeIcon.innerHTML = isMuted ? '<img src="images/volumn-icon-white.svg" alt="Volume" class="w-5 h-5">' : '<img src="images/muted-icon-white.svg" alt="Volume" class="w-5 h-5">';
+        volumeText.textContent = isMuted ? 'Sound On' : 'Sound Off';
     }
 
     // Hide fallback when video starts
